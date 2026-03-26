@@ -1,4 +1,158 @@
 * {
-    color: rgb(212, 216, 219);
+   padding: 0;
+   margin: 0;
+   color: aliceblue;
+   font-family: 'Open sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Open sans', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    background: #000000;
+    scroll-behavior: smooth;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    height: 100vh;
+}
+
+.cabeça {
+    position: fixed;
+    padding-top: 1vw;
+    padding-left: 0.5vw;
+    display: flex;
+    gap: 40.4vw;
+}
+
+.sessao-1 {
+    padding-top: 10vh; /* antes estava 10vh */
+    margin-bottom: 10vh; /* adiciona espaço embaixo */
+}
+
+.sessao-2 {
+    margin-top: 70vh; /* garante distância da imagem */
+}
+
+.imagem-sessao-1 {
+    margin-top: 2vw;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50vw;
+    border: 1px solid #ffffff;
+    background-size: cover;
+    background-position: center;
+    animation: sombra-a 5s ease-in-out infinite, mudar-img 40s ease-in-out infinite;
+}
+
+@keyframes sombra-a {
+    0% {box-shadow: 0 0 10px #ffffff;}
+    50% {box-shadow: 0 0 20px #ffffff;}
+    100% {box-shadow: 0 0 10px #ffffff;}
+}
+
+@keyframes mudar-img {
+    0% {background-image: url("Tragédia urbana e desolação industrial.png");}
+
+    33% {background-image: url("Trabalhador perdido numa paisagem psicadélica.png");}
+
+    66% {background-image: url("Gemini_Generated_Image_3zdpj33zdpj33zdp.png") ;}
+
+    100% {background-image: url("Tragédia urbana e desolação industrial.png");}
+}
+.organizar-sessao-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.5vw;
+}
+
+.organizar-sessao-1 .ex-album-s-1 {
+    margin-right:70vw ;
+}
+
+.Bmenu {
+    transition: all 2s ease;
+    border-radius: 50%;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
+}
+
+.menu {
+    color: #ffffff;
+    transition: all 2s ease;
+}
+
+.menu:hover {
+    color: #000000;
+}
+
+.Bmenu:hover {
+    transform: scale(1.05);
+    background: #ffffff;
+}
+
+.ex-album-s-1 {
+    text-shadow: 0 0 5px #ffcaca;
+}
+
+.sessao-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo {
+    max-width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-size: cover;
+    padding-left:5vw ;
+    padding-bottom:5vw ;
+    padding-right: 5vw;
+    padding-top: 5vw;
+    background-position: center;
+    animation: sombra-a-ex 5s ease-in-out infinite, mudar-img-ex 40s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.texto-ex {
+    opacity: 1;
+}
+
+@keyframes sombra-a-ex {
+    0% {box-shadow: 0 0 10px #ffffff;}
+    50% {box-shadow: 0 0 20px #ffffff;}
+    100% {box-shadow: 0 0 10px #ffffff;}
+}
+
+@keyframes mudar-img-ex {
+    0% {background-image: url("Tragédia urbana e desolação industrial.png");}
+
+    33% {background-image: url("Trabalhador perdido numa paisagem psicadélica.png");}
+
+    66% {background-image: url("Gemini_Generated_Image_3zdpj33zdpj33zdp.png") ;}
+
+    100% {background-image: url("Tragédia urbana e desolação industrial.png");}
+}
+
+.album-1, .album-1-alt, .album-2 {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
     
 }
