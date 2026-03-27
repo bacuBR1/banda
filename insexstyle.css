@@ -323,3 +323,10 @@ a{
     text-decoration: none;
 }
 
+.rodape {
+    border-top: #ffffff 2px solid;
+    box-shadow: 0 0 5px #ffffff;
+    padding: 0.5vw;
+    padding-bottom: 0;
+}
+

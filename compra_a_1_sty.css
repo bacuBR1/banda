@@ -1,0 +1,150 @@
+.menu-hiden {
+    position: absolute;
+    top: 100%;             
+    left: 50%;             
+    transform: translateX(-50%); 
+    background: rgba(153, 136, 136, 0.1);
+    border: 1px solid #fff;
+    box-shadow: #ffffff 0 0 10px;
+    transition: all 1s ease;
+    border-radius: 20px;
+    padding: 0.5vw;
+    display: none;         
+    z-index: 1;
+    min-width: 180px;
+    transition: all 1s ease;
+}
+
+.menu-hiden.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.ul-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   color: aliceblue;
+   font-family: 'Open sans', sans-serif;
+}
+
+.cabeça h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2vw;
+}
+
+h1 {
+    font-family: 'Open sans', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    background: #000000;
+    scroll-behavior: smooth;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    height: 100vh;
+}
+
+.cabeça {
+    position: fixed;
+    padding-top: 1vw;
+    padding-left: 0.5vw;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 34.3vw;
+}
+
+.Bmenu {
+    transition: all 2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+    position: relative;
+    display: inline-block;
+}
+
+.menu {
+    color: #ffffff;
+    transition: all 2s ease;
+}
+
+.menu:hover {
+    color: #000000;
+}
+
+.Bmenu:hover {
+    transform: scale(1.05);
+    background: #ffffff;
+    box-shadow: #ffffff 0 0 10px;
+}
+
+.tabela-bonita {
+    margin-left: 2.5vw;
+    margin-top: 15vw;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.tabela-bonita th,
+.tabela-bonita td {
+    padding: 15px;
+}
+
+.tabela-bonita thead {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tabela-bonita th {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.tabela-bonita td {
+    font-size: 1rem;
+}
+
+.tabela-bonita tbody tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.sessao-1 {
+    padding-top: 10vh; /* antes estava 10vh */
+    margin-bottom: 10vh; /* adiciona espaço embaixo */
+}
+
+.sessao-2 {
+    margin-top: 20vh; /* garante distância da imagem */
+}
