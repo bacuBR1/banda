@@ -3,30 +3,42 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
+            <title>Fuck Suck Pentel</title>
             <link rel="stylesheet" href="insexstyle.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+            <script src="back.js" defer></script>
         </head>
         <body>
             <header class="cabeça">
                 <div>
-                    <button><h1>Fuck Sick Pental</h1></button>
+                    <button><h1>Fuck Suck Pental</h1></button>
                 </div>
                 <div class="Bmenu">
-                    <button><p style="font-size: 25px;" class="menu">☰</p></button>
+                    <button><p style="font-size: 25px;" class="menu" onclick="mude()">☰</p></button>
+                        <div class="menu-hiden" id="menu-hiden">
+                            <ul class="ul-menu">
+                                <li><a href="#sessao-1">Home</a></li>
+                                <li><a href="#sessao-2">Explicação</a></li>
+                                <li><a href="#sessao-3">Albuns</a></li>
+                                <li><a href="#sessao-4">Produtos</a></li>
+                            </ul>
+                        </div>
                 </div>
             </header>
 
-            <section class="sessao-1">
+            <section class="sessao-1" id="sessao-1">
                 <div class="organizar-sessao-1">
                     <button class="botao-imagem">
                         <div class="imagem-sessao-1"></div>
                     </button>
                     <div>
                         <button class="ex-album-s-1" >
-                            <h1>Meus albuns, "Fuck Sick Pental", a variação dele e "Blacchams"</h1>
+                            <h1>Meus albuns, "Fuck Suck Pental", a variação dele e "Blacchams"</h1>
                         </button>
                     </div>
 
@@ -35,10 +47,10 @@
                 </div>
             </section>
 
-            <section class="sessao-2">
+            <section class="sessao-2" id="sessao-2">
                  <div class="fundo">   
                     <div class="texto-ex">
-                        <h2>Fuck Sick Pental é uma banda criada por um estudante brasileiro na cena underground, e que foi crescendo com
+                        <h2>Fuck Suck Pental é uma banda criada por um estudante brasileiro na cena underground, e que foi crescendo com
                             o decorrer do tempo, até chegar onde está hoje.
 
                             Com um som mais pesado, porém ao mesmo tempo pisicodélico, traz uma identidade nova para as bandas existentes no Brasil.
@@ -47,7 +59,7 @@
                 </div>
             </section>
 
-            <section class="sessao-3">
+            <section class="sessao-3" id="sessao-3">
                 <h3>Procurar Musicas</h3>
                 <div class="albuns">
                     <button><img src="Tragédia urbana e desolação industrial.png" alt="album 1" class="album-1"></button>
@@ -56,25 +68,24 @@
                 </div>
             </section>
 
-            <section class="sessao-4">
+            <section class="sessao-4" id="sessao-4">
                 <h1>produtos</h1>
-                <table>
-                    <tr>
-                        <th>Álbuns</th>
-                    </tr>
+                    <ul class="venda-de-albuns">
+                        <li class="album1-li">
+                            <img src="Tragédia urbana e desolação industrial.png" alt="album 1" class="album1-tab">
+                            <p>Fuck Suck Pental</p>
+                        </li>
 
-                    <tr>
-                        <td><img src="" alt="album 1"></td>
-                    </tr>
+                        <li class="album1-alt-li">
+                            <img src="Trabalhador perdido numa paisagem psicadélica.png" alt="album 1 alt" class="album1-alt-tab">
+                            <p>Alt Fuck Suck Pental</p>
+                        </li>
 
-                    <tr>
-                        <td><img src="" alt="album 1 alt"></td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="" alt="album 2"></td>
-                    </tr>
-                </table>
+                        <li class="album2-li">
+                            <img src="Gemini_Generated_Image_3zdpj33zdpj33zdp.png" alt="album 2" class="album2-tab">
+                            <P>Blacchams</P>
+                        </li>
+                    </ul>
             </section>
 
             <footer>
@@ -88,5 +99,23 @@
                     <button></button>
                 </div>
             </footer>
+
+                <table class = "tabela">
+                    <tr>
+                        <th class="titulo-tab">Álbuns</th>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
         </body>
     </html>

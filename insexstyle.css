@@ -5,6 +5,11 @@
    font-family: 'Open sans', sans-serif;
 }
 
+.cabeça h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2vw;
+}
+
 h1 {
     font-family: 'Open sans', sans-serif;
 }
@@ -30,7 +35,7 @@ section {
     padding-top: 1vw;
     padding-left: 0.5vw;
     display: flex;
-    gap: 40.4vw;
+    gap: 36.3vw;
 }
 
 .sessao-1 {
@@ -39,11 +44,11 @@ section {
 }
 
 .sessao-2 {
-    margin-top: 70vh; /* garante distância da imagem */
+    margin-top: 20vh; /* garante distância da imagem */
 }
 
 .imagem-sessao-1 {
-    margin-top: 2vw;
+    margin-top: 7vw;
     width: 25vw;
     height: 25vw;
     border-radius: 50vw;
@@ -81,11 +86,18 @@ section {
 
 .Bmenu {
     transition: all 2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
-    padding-top: 0.2vw;
-    padding-bottom: 0.2vw;
-    padding-left: 0.4vw;
-    padding-right: 0.4vw;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+    position: relative;
+    display: inline-block;
 }
 
 .menu {
@@ -100,6 +112,7 @@ section {
 .Bmenu:hover {
     transform: scale(1.05);
     background: #ffffff;
+    box-shadow: #ffffff 0 0 10px;
 }
 
 .ex-album-s-1 {
@@ -134,9 +147,9 @@ section {
 }
 
 @keyframes sombra-a-ex {
-    0% {box-shadow: 0 0 10px #ffffff;}
-    50% {box-shadow: 0 0 20px #ffffff;}
-    100% {box-shadow: 0 0 10px #ffffff;}
+    0% {box-shadow: 0 0 40px #ffffff;}
+    50% {box-shadow: 0 0 60px #ffffff;}
+    100% {box-shadow: 0 0 40px #ffffff;}
 }
 
 @keyframes mudar-img-ex {
@@ -149,10 +162,164 @@ section {
     100% {background-image: url("Tragédia urbana e desolação industrial.png");}
 }
 
-.album-1, .album-1-alt, .album-2 {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
+.albuns {
+    gap: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
+
+.album-1, .album-1-alt, .album-2 {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    animation: sombra-a-ex 5s ease-in-out infinite;
+    transition: all ease 1s;
+}
+
+.album-1:hover {
+    transform: scale(1.1);
+}
+
+.album-1-alt:hover {
+    transform: scale(1.1);
+}
+
+ .album-2:hover {
+    transform: scale(1.1);
+}
+
+
+
+@keyframes sombra-a-ex {
+    0% {box-shadow: 0 0 5px #ffffff;}
+    50% {box-shadow: 0 0 10px #ffffff;}
+    100% {box-shadow: 0 0 5px #ffffff;}
+}
+
+.sessao-3 {
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sessao-3 h3 {
+    font-size: 1.5vw;
+    padding-bottom: 3vw;
+}
+
+.album1-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: all ease 1s;
+}
+.album1-li:hover {
+    transform: scale(1.1);
+}
+.album1-tab {
+    max-width: 15vw;
+    height: 10vw;
+}
+
+.album1-alt-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: all ease 1s;
+}
+.album1-alt-li:hover {
+    transform: scale(1.1);
+}
+.album1-alt-tab {
+    max-width: 15vw;
+    height: 10vw;
+}
+
+.album2-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: all ease 1s;
+}
+.album2-li:hover {
+    transform: scale(1.1);
+}
+.album2-tab {
+    max-width: 15vw;
+    height: 10vw;
+}
+
+.venda-de-albuns {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10vw;
+    list-style: none;
+}
+
+p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+}
+
+.sessao-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    gap: 4vw;
+}
+
+
+.menu-hiden {
+    position: absolute;
+    top: 100%;             
+    left: 50%;             
+    transform: translateX(-50%); 
+    background: rgba(153, 136, 136, 0.1);
+    border: 1px solid #fff;
+    box-shadow: #ffffff 0 0 10px;
+    transition: all 1s ease;
+    border-radius: 20px;
+    padding: 0.5vw;
+    display: none;         
+    z-index: 1;
+    min-width: 180px;
+    transition: all 1s ease;
+}
+
+.menu-hiden.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.ul-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+a{
+    text-decoration: none;
+}
+
